@@ -17,10 +17,10 @@
                 More info: https://docs.ghost.org/api/handlebars-themes/helpers/get/ --}}
                 {{#get "posts" limit="3" as |mini_post|}}
                     {{#foreach mini_post}}
-                    <article>
-                        <h3><a href="{{url}}">{{title}}</a></h3>
-                        <p>{{excerpt words="15"}}</p>
-                    </article>
+                        <article>
+                            <h3><a href="{{url}}">{{title}}</a></h3>
+                            <p>{{excerpt words="15"}}</p>
+                        </article>
                     {{/foreach}}
                 {{/get}}
             </div>
@@ -41,7 +41,10 @@
         {{!-- Footer --}}
         <footer id="footer">
             <p class="copyright">&copy; {{@site.title}} - All rights reserved<br>
-            Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>, Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></p>
+                Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>,
+                Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a><br/>
+                辽 ICP 备 16013530 号
+            </p>
         </footer>
 
     </div>
